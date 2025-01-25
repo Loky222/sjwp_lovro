@@ -1,0 +1,48 @@
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+h2{
+    color: #4CAF50;
+}
+body{
+    background-color: #ECEFF1;
+}
+.a{
+    font-size: 16px;
+    color: #37474F;
+   
+}
+.b{
+    font-size: 18px;
+    color: #546E7A;
+
+}
+.c{
+    font-size: 20px;
+    color: #78909C;
+
+}
+.l1{
+    list-style-type: circle;
+}
+.l2{
+    list-style-type: square;
+
+}
+.l3{
+    list-style-type: upper-roman;
+
+}
+.l4{
+    list-style-type: lower-alpha;
+
+
+}
+.highlight{
+    color: #FFC107;
+}
+
+#main-title{
+    font-size: 4rem;
+}
