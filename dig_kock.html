@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocka</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border: 6px, solid aqua;
+            box-shadow: 0 0 9px aqua, 0 0 9px aqua inset;
+            top: 50%;
+            left: 50%;
+            border-radius: 5px;
+            animation-name: box;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-play-state: running;
+        }
+
+        @keyframes box{
+            0%{
+                transform: rotateX(0), rotateY(0), rotateZ(0);
+
+            }
+            33%{
+                transform: rotateX(180deg), rotateY(0), rotateZ(0);
+
+            }
+            67%{
+                transform: rotateX(180deg), rotateY(180deg), rotateZ(0);
+
+            }
+            100%{
+                transform: rotateX(180deg), rotateY(180deg), rotateZ(180deg);
+
+            }
+        },
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

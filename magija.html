@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi</title>
+    <style>
+        .glavni{
+            position: relative;
+            background-color: gray;
+            width: 400px;
+            height: 400px;
+        }
+        p{
+            position: absolute;
+            top: 140px;
+            left: 180px;
+            font-size: 40px;
+        }
+        .red{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            
+            
+        }
+
+        .blue{
+            position: absolute;
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            top: 200px;
+           
+        }
+
+        .yellow{
+            position: absolute;
+            background-color: gold;
+            width: 200px;
+            height: 200px;
+            left: 200px;
+            transition: 1s;
+           
+        }
+
+        .green{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            top: 200px;
+            left: 200px;
+           
+           
+        }
+        body{
+            margin: 250px;
+        }
+
+        .c:hover .red{
+            rotate: 90deg;
+            transform-origin: top-left;
+        }
+
+        .c:hover .blue{
+            rotate: 90deg;
+            transform-origin: top;
+            transition: transform;
+        }
+
+        .c:hover .yellow{
+            
+            transform: rotate(90deg);
+        }
+
+        .c:hover .green{
+            rotate: 90deg;
+            
+            transform-origin: left;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="glavni">
+        <p>Hi!</p>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+    
+</body>
+</html>
