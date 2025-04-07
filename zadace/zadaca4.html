@@ -5,42 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Zadaca o CSS-u">
     <meta name="author" content="Lovro Bartolić">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>3. zadaća</title>
+    <title>Zadaca4</title>
 
-   <style>
-    .c{
-        background-color: rgb(134, 235, 154);
-    }
-   </style>
+    <style>
+ 
+.okvir{
+    width: 400px;
+    height: 300px;
+    border: solid black;
+    background-color: #5aed9c;
+    position: relative;
+}
+.a1{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background-color: #4b4d88;
+    left: 150px;
+    top: 150px;
+}
+.a2{
+    position: absolute;
+    width: 30px;
+    height: 80px;
+    background-color: #4b4d88;
+    left: 150px;
+    top: 100px;
+
+}
+.b1{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background-color: #4b4d88;
+    left: 100px;
+    top: 200px;
+
+}
+.b2{
+    position: absolute;
+    width: 30px;
+    height: 80px;
+    background-color: #4b4d88;
+    left: 100px;
+    top: 150px;
+
+
+}
+
+.c1{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background-color: #4b4d88;
+    left: 200px;
+    top: 100px;
+
+
+}
+.c2{
+    position: absolute;
+    width: 30px;
+    height: 80px;
+    background-color: #4b4d88;
+    left: 200px;
+    top: 50px;
+
+}
+
+.Osobna{
+            width: 500px;
+            height: 300px;
+            border: 5px solid black;
+        }
+
+        .svojstva{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .profilna{
+            width: 150px;
+            height: 150px;
+            margin: 15px 0px 15px 15px;
+            border-radius: 90%;
+        
+        }
+
+        .informacije{
+            flex: 1;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            font-style: oblique;
+        }
+
+        .opis{
+            font-size: 17px;
+            margin: 5px;
+
+        }
+
+        .mail{
+            font-size: 17px;
+            margin: 20px 0px 0px 3px;
+            font-weight: 550;
+        }
+
+        .telefon{
+            font-size: 17px;
+            margin: 3px 0px 20px 3px;
+            font-weight: 550;
+        }
+
+        .mreze{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+    </style>
 </head>
-<body style="background-color: #FAFAFA;">
-    <h1 id="main-title">3. Zadaća</h1>
-    <h2>Tehničari za računalstvo 3.b</h2>
-    <p class="a">Mi smo 3.b razred.</p>
-    <p class="b" style="font-style: italic; color: #03A9F4;">Idemo u Tehničku školu Slavonski Brod.</p>
-    <p class="c">Pohađamo smjer tehničari za računalstvo.</p>
+<body>
+    <h1>Slika</h1>
 
-    <ul>
-        <li >Lovro</li>
-        <li >Petar</li>
-        <li >Rino</li>
-        <li >Borna</li>
-        <li>Drago</li>
-        <li>Ante</li>
-        <li>Kasijan</li>
-    </ul>
+    <img src="/zadace/zadaca4.png" alt="Slika" width="400px" height="300px">
 
-    <p class="highlight">Poznate osobe:</p>
-    <ul>
-        <li class="l1">Andrew Tate</li>
-        <li class="l2">Cristiano Ronaldo</li>
-        <li class="l3">Elon Musk</li>
-        <li class="l4">Lionel Messi</li>
-    </ul>
+    <div class="okvir">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="c1"></div>
+        <div class="c2"></div>
+
+    </div>
+
+    <h1>Osobna</h1>
+
+    <div class="Osobna">
+        <div class="svojstva">
+            <img class="profilna" src="/zadace/DonCorleone.jpg" alt="profilna">
+            <div class="informacije">
+                <h1 style="font-size: 40px;">Lovro Bartolić</h1>
+                <p class="opis">Učenik tehničke škole Slavonski Brod. Volim odmarat, ić van i igrat Brawl Stars.</p>
+                <p class="mail">Email: lovro.bartoli@gmail.com</p>
+                <p class="telefon">Telefon: +385 923974161</p>
+                <div class="mreze">
+                    <img style="width: 40px; height: 40px;" src="/zadace/instagram.png" alt="intsagram">
+                    <img style="width: 45px; height: 45px; border-radius: 90%;" src="/zadace/tiktok.jpg" alt="tiktok">
+                </div>
+
+        </div>
+    </div>
+
+
+
     
 </body>
 </html>
