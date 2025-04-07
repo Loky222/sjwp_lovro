@@ -12,7 +12,7 @@
             background-color: darkblue;
             
         }
-        p{
+        .gore{
             color: white;
             font-size: 50px;
             position: absolute;
@@ -39,16 +39,124 @@
         }
         body{
             margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .info{
+            position: relative;
+            left: 750px;
+            top: 150px;
+            
+            height: 400px;
+            width: 500px;
+        }
+
+        .naslov{
+            position: absolute;
+            left: 200px;
+            top: 10px;
+            font-size: 37px;
+            font-weight: 700;
+
+        }
+        .ime{
+            font-size: 18px;
+            position: absolute;
+            left: 10px;
+            top: 120px;
+        }
+        .lozinka{
+            position: absolute;
+            left: 65px;
+            top: 170px;
+            font-size: 18px;
+        }
+
+        .ime_polje{
+            position: absolute;
+            left: 160px;
+            top: 120px;
+            width: 300px;
+            height: 30px;
+
+        }
+        .lozinka_polje{
+            position: absolute;
+            left: 160px;
+            top: 170px;
+            width: 300px;
+            height: 30px;
+
+        }
+        .tipka{
+            background-color: blue;
+            width: 310px;
+            height: 37px;
+            left: 160px;
+            top: 220px;
+            position: absolute;
+            color: white;
+        }
+
+        .slika{
+            left: 950px;
+            top: 280px;
+            height: 35px;
+            width: 150px;
+            position: relative;
+        }
+
+        .dolje{
+            position: relative;
+            top: 320px;
+            border-top: solid lightslategray 0.7px;
+            width: 100vw;
+
+        }
+        .tipka:hover{
+            background-color: rgb(27, 125, 206);
+        }
+        
+        a{
+            font-size: 17px;
+            color: gray;
+        }
+
+        .Kontakt{
+            position: absolute;
+            left: 50px;
         }
 
     </style>
 </head>
 <body>
     <div class="header">
-        <p>e-Dnevnik</p>
+        <p class="gore">e-Dnevnik</p>
     </div>
     <div class="line"></div>
     <div class="grad"></div>
+
+    <div class="info">
+        <h3 class="naslov">Dobro došli</h3>
+        <label for="korisnicko_ime" class="ime">Korisničko ime:</label>
+        <input type="text" name="korisnicko_ime" id="korisnicko_ime" class="ime_polje">
+        <label for="lozinka" class="lozinka">Lozinka:</label>
+        <input type="password" name="lozinka" id="lozinka" class="lozinka_polje">
+        <button class="tipka">PRIJAVA</button>
+    </div>
+
+    <img src="./carnet.png" alt="slika" class="slika">
+
+    <div class="dolje">
+        <a href="" class="Kontakt">Kontakt +385 1 6661 500</a>
+        <a href="" class="okontakt">Online kontakt</a>
+        <a href="" class="dokumenti">Važni dokumenti</a>
+        <a href=""class="prava">Prava i obaveze korisnika</a>
+        <a href="" class="izjava">Izjava o pristupačnosti</a>
+        <a href="" class="obavijest">Obavijest o privatnosti</a>
+        <p class="cranet">© CARNET 2025.</p>
+    </div>
     
 </body>
 </html>
