@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+           
+        }
+        div{
+           
+            height: 150px;
+            width: 250px;
+            background-color: gray;
+            gap: 10px;
+            border-radius: 15px;
+
+        }
+        p{
+            color: white;
+            margin-left: 50px;
+            margin-top: 50px;
+            font-size: 45px;
+        }
+
+        .container2{
+            margin-top: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+           
+        }
+
+        .container3{
+            margin-top: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            
+           
+        }
+        .a3{
+            grid-column: span 2;
+            width: auto;
+        }
+        .b3{
+            grid-row: span 2;
+            height: auto;
+        }
+
+        .container5{
+            margin-top: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            
+            
+           
+        }
+       
+         .a5{
+            grid-column:  span 2;
+            width: auto;
+            
+        }
+        .b5{
+            grid-column: span 2;
+            width: auto;
+            
+        }
+        .kontenjer{
+            margin-top: 400px;
+            display: grid;
+            
+            
+
+        }
+        .header{
+            width: 750px;
+            height: 100px;
+            gap: 10px;
+        }
+        .sidebar{
+            height: 100px;
+            gap: 10px;
+            grid-row: 2;
+
+        }
+        .content{
+            width: 500px;
+            grid-row: 2;
+            margin-left: 250px;
+            height: 100px;
+        }
+
+
+        
+
+
+
+    </style>
+
+
+
+
+<body>
+    <div class="container">
+    <div class="a"> <p>A</p> <br></div>
+    <div class="b"> <p>B</p></div>
+    <div class="c"> <p>C</p></div>
+    <div class="d"> <p>D</p></div>
+    <div class="e"> <p>E</p></div>
+    <div class="f"> <p>F</p></div>
+
+    </div>
+
+    <div class="container2">
+        <div class="a2"> <p>D</p></div>
+        <div class="b2"> <p>A</p></div>
+        <div class="c2"> <p>F</p></div>
+        <div class="d2"> <p>E</p></div>
+        <div class="e2"> <p>B</p></div>
+        <div class="f2"> <p>C</p></div>
+    
+        </div>
+
+        <div class="container3">
+            <div class="a3"> <p>A</p></div>
+            <div class="b3"> <p>B</p></div>
+            <div class="c3"> <p>C</p></div>
+            <div class="d3"> <p>D</p></div>
+
+        
+            </div>
+
+            <div class="container5">
+                <div class="a5"> <p>A</p></div>
+                <div class="b5"> <p>B</p></div>
+                <div class="c5"> <p>C</p></div>
+                <div class="d5"> <p>D</p></div>
+                <div class="e5"> <p>E</p></div>
+                
+            
+                </div>
+
+
+                <div class="kontenjer">
+                    <div class="header"> <p>Header</p></div>
+                    <div class="sidebar"> <p>Sidebar</p></div>
+                    <div class="content"> <p>Content</p><br><p>More content than before so</p><br><p>this column is quite tall now.</p></div>
+                    <div class="sidebar2"> <p>Sidebar2</p></div>
+                    <div class="footer"><p>Footer</p></div>
+                </div>
+    
+
+
+    
+</body>
+</html>
+
+
