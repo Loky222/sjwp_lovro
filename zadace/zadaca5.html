@@ -1,86 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zadaca o CSS-u">
-    <meta name="author" content="Lovro Bartolić">
-    <title>Prodaja majci</title>
-    <style>
-        html, body{
-            background-color: #ead2ac;
-            margin: 0;
-          
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            height: 100%;
-            
-        
-        }
-        .header{
-            position: relative;
-            width: full;
-            height: 200px;
-            background-color: #e6b89c;
-            top: 0;
-           
-            
-            
-        }
-        header{
-            background-color: #e6b89c;
-            color: #4281a4;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            height: 150px;
-        }
-        .contetnt{
-            min-height: calc(100vh -80px);
-            height: 250px;
-        }
-        .naslov{
-            display: flex;
-            gap: 80px;
-            list-style: none;
-        }
-        .naslov a{
-            color: #126b9b;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        h1{
-            font-size: 45px;
-        }
-        .dolje{
-            background-color: #fe938c;
-            color: #4281a4;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            font-size: 17px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zadaca o CSS-u">
+  <meta name="author" content="Lovro Bartolić">
+  <title>Zadaca5</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+
+
+      font-size: 1.2rem;
+    }
+
+
+    
+    header {
+      background-color: #e6b198;
+      padding: 1.5rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+
+
+
+    }
+
+    header h1 {
+      color: #4682b4;
+      font-size: 2.4rem;
+
+
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #4682b4;
+
+      font-weight: bold;
+
+    }
+
+    
+    
+    
+    main {
+      flex: 1;
+      background-color: #e5cb9f;
+      padding: 2rem;
+      display: grid;
+      gap: 2.5rem;
+    }
+
+    section {
+
+
+      scroll-margin-top: 100px;
+    }
+
+    
+    
+    .onama, .kontakt {
+      max-width: 800px;
+    }
+
+    .slika_izmedju{
+      display: flex;
+      justify-content: left;
+
+
+    }
+
+    .slika_izmedju img {
+      max-width: 70%;
+
+      height: 400px;
+      border-radius: 10px;
+    }
+
+    .majice {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+
+      gap: 2rem;
+    }
+
+    
+    
+    
+    .majca {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+
+
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+
+    }
+
+    .majca img {
+
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #f28578;
+      padding: 1.5rem;
+      text-align: center;
+      color: #444;
+      font-size: 1rem;
+    }
+
+
+
+
+    @media(max-width: 600px) {
+      nav {
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="contetnt">
-        <header>
-            <h1>Prodaja majci</h1>
-            <ul class="naslov">
-                <li> <a href="#">O NAMA</a></li>
-                <li> <a href="#">CIJENE</a></li>
-                <li> <a href="#">KONTAKT</a></li>
-            </ul>
-           </header>
+  <header>
+    <h1>Prodaja majci</h1>
+    <nav>
 
-    </div>
-    <footer class="dolje">
-        <p>MAIL: prodaja.majci@gmail.com   |   Telefon: +385 92 397 4161</p>
-        <p>PRODAJA MAJCI</p>
-    </footer>
+      <a href="#onama">O NAMA</a>
+      <a href="#cijene">CIJENE</a>
+      <a href="#kontakt">KONTAKT</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section id="onama" class="onama">
+
+      <h1>O NAMA</h1>
+      <p>Bok! Ja sam Lovro Bartolić, a sve je počelo prije godinu dana kad sam odlučio da Balkan zaslužuje bolje majice. Od tada, s puno truda, kave i malo inspiracije s interneta – nastale su ove najkvalitetnije majice koje ste ikada nosili. Ako ne vjeruješ, kupi jednu. Ako si već kupio, kupi još jednu – znaš da želiš. </p>
    
+   
+    </section>
+
+   
+   
+    <div class="slika_izmedju">
+      <img src="slika-vise-majica.png" alt="Više majica">
+    </div>
     
+
+    <section id="cijene">
+
+
+      <h1>CIJENE I DIZAJN</h1>
+
+      <div class="majice">
+        <div class="majca">
+          <img src="slika-osnovna.png" alt="Osnovna majica">
+          <h3>Osnovna</h3>
+          <p>Jednostavan i čist dizajn. Idealno za svaki dan.</p>
+          <strong>9,99 €</strong>
+        </div>
+
+        <div class="majca">
+          <img src="slika-napredna.png" alt="Napredna majica">
+          <h3>Napredna</h3>
+          
+          <p>Moderna grafika i vibrantne boje za one koji žele upasti u oči.</p>
+          <strong>14,99 €</strong>
+        </div>
+
+        <div class="majca">
+          <img src="slika-premium.png" alt="Premium majica">
+          <h3>Premium</h3>
+
+          <p>Umjetnički dizajn za one s besprijekornim stilom.</p>
+          <strong>24,99 €</strong>
+        </div>
+
+      </div>
+    </section>
     
+
+    <section id="kontakt" class="kontakt">
+
+      <h1>KONTAKT</h1>
+      <p>MAIL: <a href="mailto:prodaja.majci@gmail.com">prodaja.majci@gmail.com</a></p>
+      
+      <p>Telefon: +385 92 397 4161</p>
+      <p>Instagram: @majice_balkan</p>
+    </section>
+  </main>
+
+  <footer>
+
+
+    &copy; 2025 Lovro Bartolić | PRODAJA MAJCI
+  
+</footer>
 </body>
 </html>
+
