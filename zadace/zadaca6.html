@@ -4,14 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <title>MajiceBalkan</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
   <style>
+
+
+
   body {
     background: image-set('pozadina.png') no-repeat center center fixed;
+
     background-size: cover;
     position: relative;
   }
+
+
 
   body::before {
     content: "";
@@ -19,33 +28,53 @@
     top: 0;
     left: 0;
     width: 100%;
+
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
+
+
+
   }
 
   .navbar {
+
     padding: 1.5rem;
     font-size: 1.4rem;
+
+
   }
 
   .navbar-brand{
     font-size: 30px;
+
     color: rgb(197, 171, 138);
   }
+
+
 
   .masthead {
     padding: 6.5rem 2rem;
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4); /* dodano za bolju čitljivost naslova */
+
+    background-color: rgba(0, 0, 0, 0.4); 
+
+
+
   }
+
+
+
 
   .masthead h1 {
     font-size: 3.5rem;
+
     font-weight: bold;
     text-shadow: 2px 2px 6px #000;
     margin-top: 40px;
+
+
   }
 
   .masthead p {
@@ -53,31 +82,46 @@
     text-shadow: 1px 1px 4px #000;
   }
 
-  .navbar-nav .nav-link {
+  .navbar-nav .nav-link 
+  {
+
   margin-left: 1.2rem;
   margin-right: 1.2rem;
 }
 
 
-  .content-section {
-    background-color: rgba(240, 234, 225, 0.9); /* bež nijansa */
+  
+
+.content-section {
+
+
+    background-color: rgba(240, 234, 225, 0.9); 
     padding: 4rem 2rem;
+
     margin: 2rem auto;
     border-radius: 0.5rem;
     max-width: 1000px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+
+
   }
 
   .card {
+
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
 
+ 
+ 
+ 
   footer {
     background-color: #212529;
     color: white;
     padding: 2rem;
     text-align: center;
   }
+
 </style>
 
 </head>
@@ -86,81 +130,117 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">MajiceBalkan</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
+
         <ul class="navbar-nav ms-auto">
+
+
           <li class="nav-item">
             <a class="nav-link" href="#onama">O NAMA</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="#cijene">CIJENE</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#kontakt">KONTAKT</a>
           </li>
+
+
         </ul>
       </div>
+
     </div>
   </nav>
 
   <header class="masthead">
     <div class="container">
+
       <h1>Dobrodošli na MajiceBalkan</h1>
       <p>Najkvalitetnije majice na Balkanu</p>
     </div>
   </header>
+
 
   <section id="onama" class="content-section">
     <h2>O nama</h2>
     <p>Bok! Ja sam Lovro Bartolić, a sve je počelo prije godinu dana kad sam odlučio da Balkan zaslužuje bolje majice. Od tada, s puno truda, kave i malo inspiracije s interneta – nastale su ove najkvalitetnije majice koje ste ikada nosili. Ako ne vjeruješ, kupi jednu. Ako si već kupio, kupi još jednu – znaš da želiš. 😎</p>
   </section>
 
+  
   <section id="cijene" class="content-section">
     <h2>Cijene i dizajn</h2>
     <div class="row text-center">
       <div class="col-md-4 mb-4">
+
         <div class="card">
           <img src="slika-osnovna.png" class="card-img-top" alt="Osnovna majica">
           <div class="card-body">
+
+
             <h5 class="card-title">Osnovna</h5>
             <p class="card-text">Jednostavan i čist dizajn. Idealno za svaki dan.</p>
+            
             <strong>9,99 €</strong>
           </div>
+
         </div>
       </div>
+
       <div class="col-md-4 mb-4">
         <div class="card">
           <img src="slika-napredna.png" class="card-img-top" alt="Napredna majica">
+
           <div class="card-body">
+
             <h5 class="card-title">Napredna</h5>
+
+
             <p class="card-text">Moderna grafika i vibrantne boje za one koji žele upasti u oči.</p>
             <strong>14,99 €</strong>
+
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
           <img src="slika-premium.png" class="card-img-top" alt="Premium majica">
+
+
           <div class="card-body">
             <h5 class="card-title">Premium</h5>
+
             <p class="card-text">Umjetnički dizajn za one s besprijekornim stilom.</p>
             <strong>24,99 €</strong>
           </div>
+
+
         </div>
       </div>
+
     </div>
+
   </section>
 
   <section id="kontakt" class="content-section">
     <h2>Kontakt</h2>
+
+
     <p>MAIL: <a href="mailto:prodaja.majci@gmail.com">prodaja.majci@gmail.com</a></p>
     <p>Telefon: +385 92 397 4161</p>
+
     <p>Instagram: @majice_balkan</p>
   </section>
 
+  
+  
   <footer>
+
     &copy; 2025 Lovro Bartolić | MajiceBalkan
   </footer>
 
